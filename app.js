@@ -14,9 +14,6 @@ app.use('/api/v1/tasks', tasks);
 
 app.use(notFound);
 app.use(errorHandlerMiddleware);
-// app.use('*', (req, res) => {
-//     res.status(404).json('Route not found');
-// });
 
 const port = process.env.PORT || 3005;
 
